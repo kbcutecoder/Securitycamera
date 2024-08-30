@@ -258,6 +258,27 @@
     background-size: cover;
 }
 
+
+.about1 {
+    background: linear-gradient(rgba(22, 22, 22, .7), rgba(22, 22, 22, .7)), url(../img/about2.jpeg) center center no-repeat;
+    background-size: cover;
+}
+
+.service {
+    background: linear-gradient(rgba(22, 22, 22, .7), rgba(22, 22, 22, .7)), url(../img/service1.jpeg) center center no-repeat;
+    background-size: cover;
+}
+
+.project{
+    background: linear-gradient(rgba(22, 22, 22, .7), rgba(22, 22, 22, .7)), url(../img/project2.webp) center center no-repeat;
+    background-size: cover;
+}
+
+.contact{
+    background: linear-gradient(rgba(22, 22, 22, .7), rgba(22, 22, 22, .7)), url(../img/content1.webp) center center no-repeat;
+    background-size: cover;
+}
+
 .breadcrumb-item + .breadcrumb-item::before {
     color: var(--light);
 }
