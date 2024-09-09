@@ -32,7 +32,12 @@
     <link href="css/style.css" rel="stylesheet">
 
     <!-- Recaptcha -->
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script>
+        function onSubmit(token) {
+          document.getElementById("demo-form").submit();
+        }
+      </script>
 </head>
 
 <body>
@@ -172,9 +177,12 @@
                                         <label for="message">Message</label>
                                     </div>
                                 </div>
-                                <div class="g-recaptcha" data-sitekey="6Lc-WDkqAAAAANLHYB7BmnwkHz7jSkGVvIRhKxZz"></div>
                                 <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                                    <!-- <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button> -->
+                                    <button class="btn btn-primary w-100 py-3 g-recaptcha" 
+                                    data-sitekey="6Lc-WDkqAAAAANLHYB7BmnwkHz7jSkGVvIRhKxZz" 
+                                    data-callback='onSubmit' 
+                                    data-action='submit'>Submit</button>
                                 </div>
                             </div>
                         </form>
